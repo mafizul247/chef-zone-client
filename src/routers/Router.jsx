@@ -26,11 +26,11 @@ const router = createBrowserRouter([
             },
             {
                 path: 'blog',
-                element: <PrivateRoute><Blog /></PrivateRoute>
+                element: <Blog />
             },
             {
                 path: 'recipeDetails/:id',
-                element: <RecipeDetails />,
+                element: <PrivateRoute><RecipeDetails /></PrivateRoute>,
                 loader: ({params}) => fetch(`https://chef-zone-server-mafizul247.vercel.app/chefs/${params.id}`)
             },
             {
