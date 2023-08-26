@@ -4,8 +4,10 @@ import { toast } from 'react-toastify';
 import { AuthContext } from '../../providers/AuthProvider';
 import { FaGoogle } from 'react-icons/fa';
 import { updateProfile } from 'firebase/auth';
+import useTitle from '../../hooks/useTitle';
 
 const Register = () => {
+    useTitle('Register')
     const { user, createUser, loginGoogle, setReload } = useContext(AuthContext)
     const [show, setShow] = useState(true);
     const [email, setEmail] = useState();

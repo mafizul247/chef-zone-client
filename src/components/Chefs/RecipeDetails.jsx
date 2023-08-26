@@ -3,9 +3,11 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
 import { Rating } from '@smastrom/react-rating'
 import { FaArrowLeft } from 'react-icons/fa';
 import { toast } from 'react-toastify';
+import useTitle from '../../hooks/useTitle';
 
 
 const RecipeDetails = () => {
+    useTitle('Recipe Details');
     const [favorite, setFavorite] = useState(false);
     const recipeDetails = useLoaderData();
     const { chef_name, chef_picture, short_bio, likes, years_of_experience, recipe_name, ingredients, cooking_method, rating } = recipeDetails;

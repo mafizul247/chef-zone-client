@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import useTitle from '../../hooks/useTitle';
 
 const Blog = () => {
+    useTitle('Blog');
     return (
         <Container>
             <h2 className='text-center my-2'>Blog Section</h2>

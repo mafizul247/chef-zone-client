@@ -3,10 +3,12 @@ import Banner from './Banner';
 import { useLoaderData } from 'react-router-dom';
 import Chefs from '../Chefs/Chefs';
 import LatestRecipe from './LatestRecipe';
+import useTitle from '../../hooks/useTitle';
 
 const Home = () => {
     const chefs = useLoaderData();
     // console.log(chefs);
+    useTitle('Home')
 
     return (
         <div>

@@ -1,7 +1,10 @@
 import React from 'react';
 import { Card, Carousel, Col, Container, Row } from 'react-bootstrap';
+import useTitle from '../../hooks/useTitle';
 
 const About = () => {
+    useTitle('About');
+    
     return (
         <Container className='mb-5'>
             <h2 className='text-center py-5 bg-light'>ABOUT CHEFZONE</h2>

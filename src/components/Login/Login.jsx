@@ -3,8 +3,10 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import { toast } from 'react-toastify';
 import { FaGoogle } from 'react-icons/fa';
+import useTitle from '../../hooks/useTitle';
 
 const Login = () => {
+    useTitle('Login')
     const { loginUser, loginGoogle } = useContext(AuthContext);
     const [show, setShow] = useState(true);
     const [email, setEmail] = useState();
