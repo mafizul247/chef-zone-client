@@ -5,7 +5,7 @@ import NavBer from '../components/Header/NavBer';
 
 const Main = () => {
     return (
-        <div className='container'>
+        <div>
             <NavBer/>
             {/* <div className='min-vh-100'> using Bootstrap*/}
             <div style={{minHeight: '85vh'}}>

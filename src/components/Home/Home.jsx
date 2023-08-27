@@ -13,16 +13,18 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            <div className='mt-4 text-center'>
-                <h2>Bangladeshi Chef</h2>
-                <h4>The Numbers of Chef {chefs.length}</h4>
+            <div className='container'>
+                <div className='mt-4 text-center'>
+                    <h2>Bangladeshi Chef</h2>
+                    <h4>The Numbers of Chef {chefs.length}</h4>
+                </div>
+                <div className='row row-cols-1 row-cols-md-2 g-4 mb-4 mt-2'>
+                    {
+                        chefs.map(chef => <Chefs key={chef.id} chef={chef} />)
+                    }
+                </div>
             </div>
-            <div className='row row-cols-1 row-cols-md-2 g-4 mb-4 mt-2'>
-                {
-                    chefs.map(chef => <Chefs key={chef.id} chef={chef} />)
-                }
-            </div>
-            <LatestRecipe/>
+            <LatestRecipe />
         </div>
     );
 };

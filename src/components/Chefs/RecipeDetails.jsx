@@ -19,7 +19,7 @@ const RecipeDetails = () => {
     }
     
     return (
-        <div className='my-4'>
+        <div className='my-5 container'>
             <h2 className='text-center'>Details Recipe </h2>
             <div class="card my-3">
                 <img src={chef_picture} class="card-img-top" alt={chef_name} />

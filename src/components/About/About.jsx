@@ -7,7 +7,7 @@ const About = () => {
     
     return (
         <Container className='mb-5'>
-            <h2 className='text-center py-5 bg-light'>ABOUT CHEFZONE</h2>
+            <h2 className='text-center py-5'>ABOUT CHEFZONE</h2>
             <h1 className='text-center py-2'>Our Story</h1>
             <Row xs={1} md={2} className="g-4">
 

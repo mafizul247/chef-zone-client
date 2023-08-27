@@ -28,8 +28,8 @@ const Footer = () => {
     };
 
     return (
-        <div className='mt-5 '>
-            <div className='row g-4 bg-dark text-white px-3 pt-3 px-md-5 pt-md-5'>
+        <div className='mt-5'>
+            <div className='row g-4 bg-dark text-white px-3 pt-3 px-md-5 pt-md-5 w-100'>
                 <div className="col-12 col-md-6 col-lg-3 ">
                     <img src={logo} alt="Logo" />
                     <address className='my-2'>Mohammadpur, Dhaka-1207, Bangladesh</address>
